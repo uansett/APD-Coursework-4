@@ -5,7 +5,7 @@
 
 /**
  *
- * @author X220
+ * @author Stian Johansen <stian.uansett@gmail.com>
  */
 public class Main {
     

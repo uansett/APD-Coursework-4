@@ -74,23 +74,24 @@ public class MySet<E> implements Iterable<E> // OVERVIEW: Sets are unbounded mut
     }
 
     private class MyIterator implements Iterator<E> {
+
         private int index = 0;
-        
+
         @Override
         public boolean hasNext() {
-            if(index<els.size()){
+            if (index < els.size()) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
         }
 
         @Override
         public E next() {
-            if(hasNext()){ 
+            if (hasNext()) {
                 return els.get(index++);
-            }else{
-                throw new NoSuchElementException();     
+            } else {
+                throw new NoSuchElementException();
             }
         }
 

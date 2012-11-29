@@ -58,7 +58,7 @@ class UseIntSets2
  private static class Odd implements Checker<Integer>{
         @Override
         public boolean check(Integer obj) {
-            return (obj % 2 != 0);
+            return (obj.intValue() % 2 != 0);
         }
  }
 }

@@ -79,7 +79,6 @@ public class MySet<E> implements Iterable<E> // OVERVIEW: Sets are unbounded mut
         @Override
         public boolean hasNext() {
             if(index<els.size()){
-                index++;
                 return true;
             }else{
                 return false;
@@ -88,8 +87,8 @@ public class MySet<E> implements Iterable<E> // OVERVIEW: Sets are unbounded mut
 
         @Override
         public E next() {
-            if(hasNext()){
-                return els.get(index);
+            if(hasNext()){ 
+                return els.get(index++);
             }else{
                 throw new NoSuchElementException();     
             }
